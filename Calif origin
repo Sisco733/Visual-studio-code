@@ -1,0 +1,62 @@
+namespace Calificaciones
+{
+    class program
+    {
+        static void Main(string[] args)
+        {
+            int x, y, z, r, s, t, o, h, k, l, g, n1, n2, n3, n4, n5, n6, n7, n8;
+            int a = 32;
+            int e = 1;
+            Console.WriteLine("Numero Minimas de Firmas aprobatoria " + a);
+            Console.WriteLine("Por favor ingresa el numero de firmas que usted tiene");
+            x = int.Parse(Console.ReadLine());
+            if (x >= a)
+            {
+                Console.WriteLine("Tu saber es de " + x + " Ahora coloca la puntuacion de tu examen");
+                z = int.Parse(Console.ReadLine());
+                if (z >= e) ;
+                {
+                    Console.WriteLine("Felicidades, por el momento vas bien");
+                    o = z * 4;
+                    r = x + o;
+                    Console.WriteLine("En este momento llevas " + r);
+                    {
+                        Console.WriteLine("Muuuuy bien, ahora, coloca la calificacion de tu ser");
+                        h = int.Parse(Console.ReadLine());
+                        t = r + h;
+                        Console.WriteLine("Great Job, llevas " + t);
+                    }
+                    Console.WriteLine("Estas a punto de terminar, coloca la calificacion de tu extracurricular");
+                    s = int.Parse(Console.ReadLine());
+                    k = t + s;
+                    Console.WriteLine("Terminaste, tu calificacion final es de " + k);
+                }
+
+
+            }
+            else
+            {
+                Console.WriteLine("Lo siento, no puedes acreditar la materia, puesto que tus firmas, no son las necesarias para presentar el examen, actualmente tienes " + x + " firmas Aun asi, asigna el resultado de tu examenn (aun asi, no aplica)");
+                n1 = int.Parse(Console.ReadLine());
+                if (n1 >= e) ;
+                {
+                    n2 = n1 * 4;
+                    n3 = x + n2;
+                    Console.WriteLine("En este momento llevas " + n3+ " (aun asi es nula esta calificacion)");
+                    {
+                        Console.WriteLine("Aun que el examen quedo invalido, coloca la calificacion de tu ser");
+                        n4 = int.Parse(Console.ReadLine());
+                        n5 = n3 + n4;
+                        Console.WriteLine("Tu ser es de " +n4 +" y llevas " +n5);
+                    }
+                    Console.WriteLine("Prosigue insertando la calificacion de tu extracurricular");
+                    n6 = int.Parse(Console.ReadLine());
+                    n7 = n5 + n6;
+                    n8 = n7 - n2;
+                    Console.WriteLine("Exelente, tu calificacion final es de " + n7+ " Pero como el examen se invalido tu calificacion verdadera es de " + n8);
+                }
+            }
+        }
+    }
+
+}
